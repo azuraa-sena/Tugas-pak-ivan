@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Aritmatika JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-calculator">
+        <h2>Latihan Aritmatika JavaScript</h2>
+
+        <form name="formhitung">
+            <div class="form-row">
+                <label for="bil1">Input Bilangan 1</label>
+                <input type="number" id="bil1" name="bil1" value="9">
+            </div>
+
+            <div class="form-row">
+                <label for="bil2">Input Bilangan 2</label>
+                <input type="number" id="bil2" name="bil2" value="3">
+            </div>
+
+            <div class="form-row operator-row">
+                <div class="tombol-group">
+                    <button type="button" class="btn-operator" onclick="hitung('+')">+</button>
+                    <button type="button" class="btn-operator" onclick="hitung('-')">-</button>
+                    <button type="button" class="btn-operator" onclick="hitung('*')">x</button>
+                    <button type="button" class="btn-operator" onclick="hitung('/')">/</button>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="hasil">Output</label>
+                <input type="text" id="hasil" name="hasil" readonly placeholder="Hasil hitungan">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
